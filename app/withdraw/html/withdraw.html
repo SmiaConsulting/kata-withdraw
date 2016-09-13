@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        {{client.nom}} : {{client.solde}}€
+
+
+    </div>
+    <div class="danger" ng-show="error">Votre demande est impossible...</div>
+    <div class="row">
+        <input type="number" class="form-control" ng-model="montant">
+
+
+    </div>
+    <div class="row">
+        <button ng-click="withdrawMoney()" type="button">Retirer</button>
+
+
+    </div>
+
+
+</div>

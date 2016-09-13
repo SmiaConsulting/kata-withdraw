@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <base href="/kata-withdraw/app/">
+
+    <title>kata-withdraw</title>
+
+    <!--bootstrap and our app css file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--angular and ui-router-->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+
+    <script src="commun/communServices.js"></script>
+    <!--our angular app-->
+    <script src="app.js"></script>
+
+    <script src="withdraw/withdraw.js"></script>
+    <script src="withdraw/withdrawServices.js"></script>
+    <script src="withdraw/withdrawController.js"></script>
+</head>
+
+<body ng-app="bankApp">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand">Withdraw Application</a>
+        </div>
+    </div>
+</nav>
+
+<div ng-view>
+    Loading....
+
+</div>
+</body>
+</html>
